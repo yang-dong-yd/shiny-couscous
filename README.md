@@ -1,1 +1,3 @@
 # shiny-couscous
+
+Demo project.
