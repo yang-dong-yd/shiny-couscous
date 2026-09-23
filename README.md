@@ -1,3 +1,5 @@
 # shiny-couscous
 
-Demo project on github.
+Demo project on GitHub.
+We use this project for testing.
+
