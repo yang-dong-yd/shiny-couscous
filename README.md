@@ -1,3 +1,3 @@
 # shiny-couscous
 
-Demo project.
+Demo project on github.
