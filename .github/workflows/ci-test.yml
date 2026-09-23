@@ -1,0 +1,21 @@
+name: CI Smoke Test
+
+# 触发条件：推送到指定分支、发起 PR 或在 GitHub 页面手动一键触发
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # 允许在 GitHub Actions 页面手动点击运行
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run a Quick Test
+        run: |
+          echo "Hello, CI is working perfectly!"
+          git status
